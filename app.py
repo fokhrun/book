@@ -1,8 +1,10 @@
 
+import os
 from flask import Flask
+from book_app import create_app
 
 
-app = Flask(__name__)
+app = create_app("default")
 
 
 @app.route('/')
